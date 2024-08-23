@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "38595082311",
+    "project_id": "chelan-f0ea9",
+    "storage_bucket": "chelan-f0ea9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38595082311:android:8624dba7b7d5f6f5e99962",
+        "android_client_info": {
+          "package_name": "lenche.project.lenche"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQSx0yiyH-9z-6aLYJrgalPVB9JnSRxlY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
