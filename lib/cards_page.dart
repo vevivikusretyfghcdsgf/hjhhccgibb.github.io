@@ -67,8 +67,9 @@ class _CardsPageState extends State<CardsPage> with SingleTickerProviderStateMix
           _isPlaying = true;
           _animationController.repeat(reverse: true);
         });
-        await _audioPlayer.setSourceAsset(_cards[_currentIndex].audioUrl);
-        await _audioPlayer.resume();
+        await _audioPlayer.setSource(AssetSource('Voicy_ure trash kid sound effect.mp3'));
+        await _audioPlayer.play(AssetSource('Voicy_ure trash kid sound effect.mp3'));
+        //await _audioPlayer.pause();
         print('objectkjkjhhhjhhjhhjhjhkjj');
       } catch (e) {
         print('$e ttttttttttttttttttttttttt');

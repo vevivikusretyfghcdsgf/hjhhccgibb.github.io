@@ -6,6 +6,8 @@ import 'package:lenche/cards_page_two.dart';
 import 'package:lenche/lesson.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 
+import 'alphabet_page_test.dart';
+
 class IntroLesson extends StatelessWidget {
    IntroLesson({super.key});
 
@@ -46,7 +48,7 @@ class IntroLesson extends StatelessWidget {
               InkWell(onTap: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) {
-                      return const AlphabetPage();
+                      return const AlphabetPageTest();
                     }));
               },
                 child: Container(
@@ -67,7 +69,7 @@ class IntroLesson extends StatelessWidget {
               InkWell(onTap: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) {
-                      return IntroLesson();
+                      return const AlphabetPageTest();
                     }));
               },
                 child: Container(
@@ -181,10 +183,10 @@ class IntroLesson extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return GestureDetector(
                       onTap: () {
-                        /*Navigator.of(context).push(
+                        Navigator.of(context).push(
                             MaterialPageRoute(
                                 builder: (context) =>
-                                gridNav[index]));*/
+                                gridNav[index]));
                       },
                       child: Container(
                         decoration: BoxDecoration(

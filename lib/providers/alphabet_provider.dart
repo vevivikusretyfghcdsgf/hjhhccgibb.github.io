@@ -12,7 +12,7 @@ class AlphabetProvider extends ChangeNotifier {
     notifyListeners();
 
     try {
-      await _audioPlayer.setSourceAsset(url);
+      await _audioPlayer.setSourceUrl(url);
       await _audioPlayer.resume();
 
       _audioPlayer.onPlayerComplete.listen((_) {

@@ -65,8 +65,8 @@ class _CardsPageTwoState extends State<CardsPageTwo> with SingleTickerProviderSt
   void _playAudioForFirstCard() async {
     if (_currentIndex < _cards.length) {
       try {
-        await _audioPlayer.setSourceAsset(_cards[_currentIndex].audioUrl);
-        await _audioPlayer.resume();
+        await _audioPlayer.play(AssetSource(_cards[_currentIndex].audioUrl));
+        //await _audioPlayer.pause();
       } catch (e) {
         print('Exception $e');
       }
@@ -76,8 +76,8 @@ class _CardsPageTwoState extends State<CardsPageTwo> with SingleTickerProviderSt
   void _playAudioForSecondCard() async {
     if (_currentIndex + 1 < _cards.length) {
       try {
-        await _audioPlayer.setSourceAsset(_cards[_currentIndex + 1].audioUrl);
-        await _audioPlayer.resume();
+        await _audioPlayer.play(AssetSource(_cards[_currentIndex + 1].audioUrl));
+        //await _audioPlayer.pause();
       } catch (e) {
         print('Exception $e');
       }
